@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>colours</title>
+    <style>
+        #frist {
+            height: 75px;
+            width: 75px;
+            background-color: blue;
+            border-color: brown;
+            border-style: solid;
+            border-width: 5px;
+            border-radius: 7px;
+            /* border: 7px solid rebeccapurple; */
+        }
+
+        #sec {
+            color: rgb(205, 0, 578);
+            height: 100px;
+            width: 100px;
+            border-right: 10px;
+            border-left: 5px;
+            border-top: 7px;
+            border-bottom: 7px;
+            border-style: solid;
+            background-color: lightskyblue;
+            border-color: orangered;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 20px;
+        }
+
+        #third {
+            height: 900px;
+            width: 900px;
+            color: aliceblue;
+            background-color: black;
+            border: 9px solid rgb(11, 199, 300);
+            background-image: url(https://media.istockphoto.com/id/1013495462/vector/tiger-head.jpg?s=612x612&w=0&k=20&c=aO1RlmviSv1VvC-qpf433QTOEJ2gLhP2KKznCTkZWo8=);
+            background-repeat: no-repeat;
+            background-position: center;
+
+        }
+
+        /* BOX MODEL STYLE */
+
+
+        #spl {
+            padding-bottom: 90px;
+            width: 300px;
+            box-sizing: content-box;
+            /* box-sizing: border-box; */
+        }
+
+        .boxes {
+            box-sizing: border-box;
+            background-color: rgb(251, 213, 254);
+            border: 5px rgb(3, 6, 145) solid;
+            padding: 30px;
+            padding-top: 7px;
+            /* margin: 30px; */
+            margin: auto;
+            height: 217px;
+            width: 400px;
+            margin: 50px;
+            border-radius: 9px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h3>this is one</h3>
+    <p id="frist">frist para</p>
+
+    <h3>this is sec</h3>
+    <p id="sec">second para</p>
+
+    <h3>third </h3>
+    <strong>
+        <p id="third">this is third <br><span>picture is in center</span>
+        </p>
+    </strong>
+
+
+    <!-- BOX MODEL -->
+
+
+    <strong>
+        <h2 style="position: relative;left: 75px;top: 50px;"> Box Model</h2>
+    </strong><br>
+    <div class="boxes" style="background-color: burlywood;">
+        <h3>type one</h3>
+        <p>line one</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, velit itaque? Autem enim fugit magni amet et,
+            tenetur repudiandae deleniti aliquam, sed architecto, tempora incidunt.</p>
+    </div>
+
+
+    <div id="spl" class="boxes" style="border-color: rgb(28, 110, 10);">
+        <h3>type two</h3>
+        <p>line one</p>
+        <p style="border: solid rgb(99, 148, 238);
+         border-radius: 25px;
+         height: 125px;
+         width:225px;
+         position: relative;
+         left: 10px;
+         padding-left: 11px;
+         /* padding-bottom: 90px; */
+         background-color:rgb(236, 249, 202);">Lorem ipsum dolor sitamet consectetur adipisicing elit. Natus, velit
+            itaque?
+            Autem enim fugit magni amet et, tenetur repudiandae deleniti aliquam, sed architecto, tempora incidunt.
+        </p>
+    </div>
+
+
+
+    <div class="boxes"
+        style="background-image: url(https://as1.ftcdn.net/v2/jpg/00/73/74/86/500_F_73748667_YtSek603y4KYZBBkBwvf5QqJ7nFqmzbA.jpg);">
+        <h3>type three</h3>
+        <p>line one</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, velit itaque? Autem enim fugit magni amet et,
+            tenetur repudiandae deleniti aliquam, sed architecto, tempora incidunt.</p>
+
+    </div>
+    <h3 style="position: relative;left: 49%;">*THE END*</h3>
+    <h3 style="position: absolute;  left: 0px;font-size: 37px;
+     /* bottom: 0%; */
+     /*right: 0%;*/"
+     >
+        To return home <strong><a href="/i.html">HOME</a></strong></h3>
+</body>
+
+</html>

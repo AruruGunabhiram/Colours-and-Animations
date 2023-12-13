@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /* * { */
+        margin: 0%;
+        padding: 0px;
+        }
+
+        .one {
+            width: 100px;
+            height: 100px;
+            background: red;
+            position: relative;
+            animation: mymove1 5s infinite;
+        }
+
+        .con {
+            display: flex;
+        }
+
+        .two {
+            width: 100px;
+            height: 100px;
+            background: red;
+            position: relative;
+            animation: mymove2 5s 5s backwards;
+            /* display: none; */
+        }
+
+
+        @keyframes mymove2 {
+            from {
+                left: 0px;
+                display: block;
+            }
+
+            to {
+                left: 200px;
+                font-size: 30px;
+                display: none;
+            }
+        }
+
+        @keyframes mymove1 {
+            from {
+                left: 0px;
+            }
+
+            to {
+                left: 400px;
+            }
+        }
+
+        #div1 {
+            position: relative;
+            height: 300px;
+            width: 300px;
+            margin: 100px;
+            padding: 10px;
+            border: 1px solid black;
+        }
+
+        #div2 {
+            padding: 50px;
+            position: absolute;
+            border: 1px solid black;
+            background-color: red;
+            transform: rotateY(360deg);
+            transform-origin: 50% 50% 100px;
+            transform-style: preserve-3d;
+            animation: rotate 20s infinite;
+        }
+
+        p {
+            display: block !important;
+            text-align: right !important;
+            color: blueviolet;
+        }
+
+
+        #div3 {
+            height: 200px;
+            width: 130px;
+            padding: 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            border: 1px solid black;
+            background-color: yellow;
+            transform: rotateY(-60deg);
+            transform: rotateY(746deg);
+            transform-origin: 40% 90% 10px;
+            /* animation: rotate 20s infinite; */
+
+        }
+
+        @keyframes rotate {
+            0% {
+                background-color: red;
+                transform: rotateY(-360deg);
+            }
+
+            25% {
+                background-color: yellow;
+                transform: rotateY('angle')
+            }
+
+            50% {
+                background-color: blue;
+                transform: rotateY(0deg);
+            }
+
+            75% {
+                background-color: green;
+                transform: rotateY(180deg);
+            }
+
+            100% {
+                background-color: red;
+                transform: rotateY(360deg);
+            }
+        }
+
+        .con2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* align-content: center; */
+            height: 400px;
+            width: 100%;
+        }
+
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .ine2 {
+            display: flex;
+            width: 200px;
+            height: 200px;
+            justify-content: center;
+            align-items: center;
+
+            padding: 2px auto;
+            margin: 2px auto;
+            background: red;
+            transition: all 3s ease-in;
+        }
+
+        .ine2:hover::before {
+            z-index: -1;
+            display: flex;
+            content: "hlo world lorem23f ❤️";
+        }
+
+        /* .ine2 img:hover {
+            height: 300px;
+            width: 300px;
+        } */
+        .ine2 img {
+            height: 200px;
+            width: 200px;
+            opacity: .4;
+            /* z-index: -1; */
+        }
+
+        .cent {position: absolute;
+            top: 50%;
+            left: 50%;
+
+        }
+
+        .ine2:hover {
+            /* justify-content: center; */
+            /* align-items: center; */
+            background-color: rgb(88, 88, 6);
+            background-image: url(https://c8.alamy.com/compde/2c13f0h/smiley-emojis-in-gelben-hintergrund-vektor-konzept-smileys-emoji-avatar-charakter-in-draufsicht-mit-verschiedenen-gesichtsausdrucke-wie-in-der-liebe-glucklich-2c13f0h.jpg);
+            /* position: absolute; */
+            /* background-repeat: no-repeat; */
+            /* background-size: auto; */
+            transform: rotate(14400deg);
+            /* top: 777px; */
+            /* left: 19%; */
+            height: 300px;
+            width: 300px;
+            border-radius: 70px;
+
+        }
+
+        .ine {
+            display: flex;
+            width: 200px;
+            height: 200px;
+            justify-content: center;
+            align-items: center;
+            /* justify-content: center; */
+            padding: 2px auto;
+            margin: 2px auto;
+            background: red;
+            transition: all 5s ease-in;
+        }
+
+        .ine:hover {
+            /* justify-content: center; */
+            /* align-items: center; */
+            background-color: yellow;
+            background-image: url(https://em-content.zobj.net/source/microsoft-teams/364/victory-hand_270c-fe0f.png );
+            /* position: absolute; */
+            background-repeat: no-repeat;
+            background-size: auto;
+
+            /* top: 777px; */
+            /* left: 19%; */
+            height: 300px;
+            width: 300px;
+            border-radius: 70px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>The animation Property</h1>
+
+    <p>Move an element from 0px to 200px left. The animation lasts for 5 seconds. It then starts over again, and go on
+        forever (infinite).</p>
+
+    <div class="con">
+
+        <div class="one" id="idone">hi</div>
+        <div class="two">hii</div>
+
+    </div>
+    <hr>
+
+    <h1>The transform-style Property</h1>
+
+    <div id="div1">
+        <div id="div2">HELLO
+            <div id="div3">
+                <p>dot</p>YELLOW
+            </div>
+        </div>
+    </div>
+    <hr>
+
+
+    <div class="center">
+        <h2>#VOTE</h2>
+    </div>
+
+    <div class="con2">
+        <div class="ine"><strong>TDP</strong> </div><br>
+
+        <div class="ine2">
+            <!-- <img src="https://imgv3.fotor.com/images/blog-cover-image/part-blurry-image.jpg" alt="ok"> -->
+            <div class="cent">YCP</div>
+        </div>
+    </div>
+    <hr>
+    <div class="new">XXX</div>
+</body>
+
+</html>

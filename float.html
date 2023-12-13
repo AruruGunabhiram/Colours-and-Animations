@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .total {
+            border: 5px solid rgb(68, 68, 68);
+            margin: 27px auto;
+            padding: 10px;
+            width: 700px;
+            background-color: rgb(248, 238, 225);
+
+        }
+
+        .part {
+            border: 5px rgb(118, 6, 116) solid;
+            margin: 9px 3px;
+            padding: 5px 3px;
+            background-color: rgb(251, 248, 191);
+            border-radius: 5px;
+            /* float: left;
+            width: 12%;  */
+        }
+
+
+        #two {
+            float: right;
+            width: 24%;
+        }
+
+        #three {
+            float: left;
+            width: 24%;
+        }
+
+
+
+        #four {
+            /* float: left; */
+            width: 100%;
+            clear: both;
+        }
+
+        #one {
+            clear: left;
+            float: left;
+            width: 24%;
+        }
+
+        h1 {
+            margin: auto;
+            width: 90px;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        h3 {
+            text-align: center;
+            margin: auto;
+        }
+
+        #con1 {
+            border: 5px solid rebeccapurple;
+            margin: auto;
+            padding: 10px;
+            width: 700px;
+            background-color: rgb(243, 230, 214);
+            /* padding: 7px; */
+        }
+
+        .one {
+            /* color: rgb(245, 99, 245); */
+            background-color: rgb(253, 194, 105);
+            border-radius: 3px;
+            /* border: none; */
+            padding: 5px;
+            cursor: pointer;
+        }
+
+        a {
+            color: rgb(198, 24, 24);
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: rgb(104, 170, 6);
+            background-color: rgb(251, 245, 235);
+        }
+
+        a:visited {
+            text-decoration: double;
+            color: rgb(7, 81, 2);
+            background-color: rgb(230, 44, 125);
+
+        }
+
+        a:active {
+            background-color: blue;
+        }
+
+        .two:hover {
+            color: rgb(197, 5, 5);
+            background-color: rgb(244, 187, 89);
+        }
+
+        /* #new:hover{font-size: large;} */
+
+
+    </style>
+
+
+
+</head>
+
+<body>
+
+    <div class="total">
+        <h1>classes</h1>
+        <div id="one" class="part">
+            <h3>class1</h3>
+            <p>this is part one. Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae ab nesciunt in
+                vitae, sint repellendus error! Blanditiis corporis magnam quia odio fugiat praesentium laboriosam,
+                distinctio tenetur!</p>
+
+        </div>
+
+        <div id="two" class="part">
+            <h3>class2</h3>
+            <p>this is part two. Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae ab nesciunt in
+                vitae, sint repellendus error! Blanditiis corporis magnam quia odio fugiat praesentium laboriosam,
+                distinctio tenetur!</p>
+
+        </div>
+
+        <div id="three" class="part">
+            <h3>class3</h3>
+            <p>this is part three. Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae ab nesciunt in
+                vitae, sint repellendus error! Blanditiis corporis magnam quia odio fugiat praesentium laboriosam,
+                distinctio tenetur!</p>
+
+        </div>
+
+        <div id="four" class="part">
+            <h3>class4</h3>
+            <p>this is part four. Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae ab nesciunt in
+                vitae, sint repellendus error! Blanditiis corporis magnam quia odio fugiat praesentium laboriosam,
+                distinctio tenetur! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum laudantium, atque,
+                doloremque repudiandae porro maiores suscipit in explicabo molestias tempora rem blanditiis? Dignissimos
+                placeat deleniti quasi cumque officiis assumenda libero alias! Tempora veritatis repellendus cupiditate
+                ullam quisquam explicabo voluptas repellat facilis aut. Dignissimos libero suscipit earum commodi
+                ratione excepturi aliquam?</p>
+
+        </div>
+
+    </div>
+
+    <div class="con" id="con1">
+        <h2>this is head 2</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae error nulla labore blanditiis voluptas est
+            quibusdam maxime.</p>
+
+        <a href="https://www.google.com/maps" class="one">Read more</a>
+        <button class="two" id="new">Know more</button>
+
+
+    </div>
+
+    
+
+
+</body>
+
+</html>
